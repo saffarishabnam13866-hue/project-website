@@ -1,0 +1,66 @@
+
+:root {
+  --bg: #eafaf1;        
+  --surface: #d1fae5;   
+  --text: #064e3b;      
+  --muted: #10b981;     
+  --brand: #059669;     
+  --brand-dark: #047857;
+  --card: #a7f3d0;      
+}
+
+h1 {
+  font-size: 3rem;   /* اندازه بزرگ‌تر */
+  font-weight: bold; /* ضخیم‌تر */
+  margin-bottom: 20px;
+}
+
+#about {
+  font-size: 1.3rem;   /* همه متن‌های داخل این سکشن بزرگ‌تر می‌شوند */
+}
+ 
+
+body {
+  font-family: "Shabnam", sans-serif;
+}
+
+
+
+.btn {
+  display: inline-block;       /* دکمه در خط جدا */
+  background-color: #059669;   /* سبز پررنگ */
+  color: #fff;                 /* متن سفید */
+  padding: 10px 20px;          /* فاصله داخلی */
+  border-radius: 8px;          /* گوشه‌های گرد */
+  text-decoration: none;       /* حذف خط زیر لینک */
+  font-weight: bold;           /* متن ضخیم */
+  transition: background 0.3s; /* افکت تغییر رنگ */
+}
+
+.btn:hover {
+  background-color: #047857;   /* سبز تیره‌تر هنگام هاور */
+}
+
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+  margin: 0; background: #759b66; color: #e5e7eb;
+}
+.header { display:flex; justify-content:space-between; padding:1rem; background:#111827; }
+.nav-list { display:flex; gap:1rem; list-style:none; }
+.nav-toggle { display:none; }
+.hero { text-align:center; padding:4rem 2rem; background:#2a702d; }
+.btn { background:#02440b; color:#fff; padding:.7rem 1.2rem; border-radius:8px; }
+.section { padding:3rem 2rem; }
+.section.alt { background:#2a702d; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; }
+.card { background:#123814; padding:1rem; border-radius:8px; text-align:center; }
+.blog-post { margin-bottom:1.5rem; }
+.footer { text-align:center; padding:1rem; background:#17692c; }
+
+/* واکنش‌گرا */
+@media(max-width:768px){
+  .nav-toggle{display:block;}
+  .nav-list{display:none; flex-direction:column;}
+  .nav-list.open{display:flex;}
+}
